@@ -1,4 +1,4 @@
-[![Release](https://github.com/CloudNativeEntrepreneur/microservice/actions/workflows/release.yml/badge.svg)](https://github.com/CloudNativeEntrepreneur/microservice/actions/workflows/release.yml)
+[![Release](https://github.com/CloudNativeEntrepreneur/knative-microservice/actions/workflows/release.yml/badge.svg)](https://github.com/CloudNativeEntrepreneur/knative-microservice/actions/workflows/release.yml)
 
 # knative-microservice
 
