@@ -44,7 +44,13 @@ jest.spyOn(process, "exit").mockImplementation(() => {
 describe("src/index.ts", () => {
   it("should start our service", async () => {
     const { server, logger, onListen, shutdown } = await microservice({
-      handlers: { path: "path", options: { enableSyncSendToDenormalizer: true, enableEventPublishing: true } },
+      handlers: {
+        path: "path",
+        options: {
+          enableSyncSendToDenormalizer: true,
+          enableEventPublishing: true,
+        },
+      },
       logger: pino(),
     });
     expect(server.use).toBeCalledTimes(4);
@@ -56,7 +62,6 @@ describe("src/index.ts", () => {
 
     expect(server.close).toBeCalled();
     expect(persistenceLayer.disconnect).toBeCalled();
-
   });
 });
 
