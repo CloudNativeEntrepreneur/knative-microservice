@@ -1,14 +1,5 @@
-[![Release](https://github.com/CloudNativeEntrepreneur/sourced-repo-typeorm/actions/workflows/release.yml/badge.svg)](https://github.com/CloudNativeEntrepreneur/sourced-repo-typeorm/actions/workflows/release.yml)
+[![Release](https://github.com/CloudNativeEntrepreneur/microservice/actions/workflows/release.yml/badge.svg)](https://github.com/CloudNativeEntrepreneur/microservice/actions/workflows/release.yml)
 
-# sourced-repo-typeorm
+# microservice
 
-A sourced repo that uses TypeORM to persist events. This allows for passing different connection options, and thus, allows for different database for the persistence layer:
-https://typeorm.io/#/connection-api
-
-Currently has only been tested with PostgreSQL. Uses the `bigint` and `jsonb` types so CockroachDB should work as well.
-
-With minor adjustments - using `json` instead of `jsonb`, MariaDB and MySQL could be supported as well. PRs welcome!
-
-## Usage
-
-See `__tests__/integration` for example usage.
+Create an express server with handlers from a folder registered, logging set up, and a shutdown function.
