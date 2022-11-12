@@ -1,5 +1,5 @@
 {
-  "name": "@cloudnativeentrepreneur/microservice",
+  "name": "knative-microservice",
   "version": "0.0.0-development",
   "description": "",
   "main": "dist/cjs/index.js",
@@ -8,10 +8,7 @@
   "scripts": {
     "build": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
     "test": "jest --config ./jest.json --coverage --verbose",
-    "test:watch": "DEBUG=sourced* jest --config ./jest.json --coverage --verbose --watch",
-    "test:integration": "DEBUG=microservice* jest --config ./jest.integration.json --coverage --verbose",
-    "test:integration:watch": "DEBUG=microservice* jest --config ./jest.integration.json --coverage --verbose --watch",
-    "test:all": "DEBUG=microservice* jest --config ./jest.all.json --coverage --verbose",
+    "test:watch": "jest --config ./jest.json --coverage --verbose --watch",
     "lint": "eslint src __tests__ --ext=.ts",
     "lint:fix": "eslint --fix src __tests__ --ext=.ts",
     "semantic-release": "semantic-release"
@@ -59,7 +56,8 @@
       {
         "name": "beta",
         "prerelease": true
-      }, {
+      },
+      {
         "name": "alpha",
         "prerelease": true
       }
