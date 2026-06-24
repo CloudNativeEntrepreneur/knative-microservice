@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/CloudNativeEntrepreneur/microservice#readme",
   "dependencies": {
-    "express": "^4.18.2",
+    "express": "^5.0.0",
     "express-pino-logger": "^7.0.0",
     "register-server-handlers": "^4.2.4"
   },
